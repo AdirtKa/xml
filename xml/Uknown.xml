@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Planet name="Earth" weight="5.9720000000000003e+24" radius_km="6371" distance_to_earth_km="384400">
+	<Satelite>Moon</Satelite>
+	<Satelite>imaginary satelite</Satelite>
+</Planet>
