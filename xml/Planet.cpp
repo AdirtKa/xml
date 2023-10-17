@@ -19,3 +19,8 @@ void Planet::save_to_xml(const std::string& filename)
 
     doc.save_file(filename.c_str());
 }
+
+void Planet::append_satelite(std::string satelite)
+{
+    this->satelites.push_back(satelite);
+}

@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <planets>
-	<planet name="Earth" weight="5.9720000000000003e+24" radius_km="6371" distance_to_earth_km="384400">
-		<Satelite satelite_name="Moon" />
-		<Satelite satelite_name="imaginary satelite" />
+	<planet name="Earth" weight="5.9720000000000003e+24" radius_km="32323" distance_to_earth_km="3333">
+		<satelite satelite_name="Moon" />
+		<satelite satelite_name="imaginary satelite" />
+	</planet>
+	<planet name="Jupiter" weight="1.00972e+26" radius_km="2121" distance_to_earth_km="1111">
+		<satelite satelite_name="Very" />
+		<satelite satelite_name="many" />
 	</planet>
 </planets>
