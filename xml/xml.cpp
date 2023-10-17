@@ -17,7 +17,7 @@ int main(int argc, const char* argv[]) {
 
     SolarSystem test(doc_name);
     test.print_system();
-
+    test.save_system(doc_name);
 
     return 0;
 }
