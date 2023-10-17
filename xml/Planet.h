@@ -6,8 +6,8 @@
 class Planet
 {
 public:
-	Planet() : name("Uknown name"), weight(0), satelites({}), radius_km(0), distance_to_earth_km(0) {};
-	Planet(std::string planet_name, double planet_weight, std::vector <std::string> planet_satelites, double radius, double distance):
+	Planet() : name("Uknown name"), weight(0), satelites(), radius_km(0), distance_to_earth_km(0) {};
+	Planet(std::string planet_name, double planet_weight, double radius, double distance, std::vector <std::string> planet_satelites = {}) :
 		name(planet_name), weight(planet_weight), satelites(planet_satelites), radius_km(radius), distance_to_earth_km(distance) {};
 
 	std::string get_name() { return this->name; };
