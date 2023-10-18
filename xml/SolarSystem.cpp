@@ -18,7 +18,7 @@ SolarSystem::SolarSystem(std::string fileName)
 		}
 
 		this->planets.push_back(planet);
-	};
+	}
 }
 
 
@@ -77,4 +77,39 @@ void SolarSystem::print_planet()
 			<< '|' << std::setw(19) << planet.get_satelites().size() << "|\n"
 			<< " -----------------------------------------------------------------------------------------------------\n";
 	}
+}
+
+void SolarSystem::append_planet()
+{
+	double weight, radius, distance_to_earth;
+	std::string name, satelite;
+	std::vector <std::string> satelites;
+	int satelites_count;
+
+	std::cout << "¬ведите название планеты: "; std::cin >> name;
+	std::cout << "¬ведите массу планеты: "; std::cin >> weight;
+	std::cout << "¬ведите радиус планеты в км: "; std::cin >> radius;
+	std::cout << "¬ведите рассто€ние от планеты до земли в км: "; std::cin >> distance_to_earth;
+	std::cout << "¬ведите кол-во спутников планеты: "; std::cin >> satelites_count;
+
+	for (size_t i = 0; i < satelites_count; i++)
+	{
+		std::cout << "¬ведите им€ спутника: "; std::cin >> satelite;
+		satelites.push_back(satelite);
+	}
+
+	this->planets.push_back(Planet(
+		name,
+		weight,
+		radius,
+		distance_to_earth,
+		satelites
+	));
+
+
+}
+
+void SolarSystem::delete_planet(int index)
+{
+	this->planets.erase(this->planets.begin() + index);
 }

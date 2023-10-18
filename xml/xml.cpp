@@ -5,9 +5,6 @@
 #include "pugixml.hpp"
 #include <Windows.h>
 
-Planet get_planet() {
-    return Planet();
-}
 
 int main(int argc, const char* argv[]) {
     SetConsoleOutputCP(1251);
@@ -16,6 +13,9 @@ int main(int argc, const char* argv[]) {
     std::string doc_name = "Planets.xml";
 
     SolarSystem test(doc_name);
+    test.print_system();
+    test.append_planet();
+    test.delete_planet(1);
     test.print_system();
     test.save_system(doc_name);
 

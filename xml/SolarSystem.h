@@ -15,6 +15,8 @@ public:
 	void save_system(std::string filePath);
 	void print_header();
 	void print_planet();
+	void append_planet();
+	void delete_planet(int);
 
 
 private:

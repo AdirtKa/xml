@@ -4,8 +4,11 @@
 		<satelite satelite_name="Moon" />
 		<satelite satelite_name="imaginary satelite" />
 	</planet>
-	<planet name="Jupiter" weight="1.00972e+26" radius_km="2121" distance_to_earth_km="1111">
-		<satelite satelite_name="Very" />
-		<satelite satelite_name="many" />
+	<planet name="moon" weight="322" radius_km="10" distance_to_earth_km="44" />
+	<planet name="впалорпвло" weight="34565" radius_km="34" distance_to_earth_km="7654">
+		<satelite satelite_name="ва" />
+		<satelite satelite_name="апр" />
+		<satelite satelite_name="уу" />
+		<satelite satelite_name="уу" />
 	</planet>
 </planets>
